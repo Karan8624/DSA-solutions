@@ -1,0 +1,11 @@
+def twoSum(numbers, target):
+    seen = {}
+    for index, num in enumerate(numbers):
+        check = target - num
+        if check in seen:
+            return [seen[check]+1, index+1]
+        seen[num] = index
+
+numbers = [2,7,11,15] 
+target = 9
+print(twoSum(numbers,target))

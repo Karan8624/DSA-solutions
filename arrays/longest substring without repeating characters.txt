@@ -1,0 +1,23 @@
+def longest(s):
+    l = 0
+    seen = {}
+    best = 0
+    for r in range(0,len(s)):
+        if s[r] in seen and seen[s[r]]>=l:
+            l = seen[s[r]] + 1
+        
+        seen[s[r]] = r
+        best = max(best,r-l+1)
+    return best
+st = "abcbbabcacab"
+print(longest(st))
+"""
+LOGIC:
+1. left is just a pointer used to measure the amount of characters
+2. We linearly traverse through s using r as its index
+3. For each new character we encounter we add it to the seen dictionary we add it along with the index we found it at
+4. If we encounter a character thats already in seen we reset the search from the index we last saw the repeated character 
+   hence left = seen[s[right]]+1
+5. Since we dont use a specific counter to count the best we just use the indexes difference to figure out the longest 
+   substring size(formula = right-left+1)
+"""
