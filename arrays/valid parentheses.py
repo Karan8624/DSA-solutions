@@ -20,7 +20,7 @@ def validParentheses(s):
 
 
 
-test = "{]}"
+test = "{[]}"
 
 print(validParentheses(test))
         
