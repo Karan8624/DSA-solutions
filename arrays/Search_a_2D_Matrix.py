@@ -8,7 +8,7 @@ def searchMatrix(matrix, target):
     left  = 0
     right = len(matrix)-1
 
-    while left<=right:
+    while left<=right: 
         if left >= len(matrix):
             return False
         mid = (left+right)//2
@@ -40,7 +40,7 @@ def searchMatrix(matrix, target):
 
     
 
-test = [[1,2,5,7],[10,11,16,20],[23,30,34,60]]
+test = [[1,3,5,7],[10,11,16,20],[23,30,34,60]]
 t = 3
 print(searchMatrix(test,t))
         
