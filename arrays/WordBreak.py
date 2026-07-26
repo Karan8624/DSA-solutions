@@ -48,6 +48,6 @@ def wordBreak(s, wordDict):
     return check[len(s)]
 
 
-print(wordBreak(s = "leetcode", wordDict = ["leet","coe"]))
+print(wordBreak(s = "leetcode", wordDict = ["leet","code"]))
 
 
