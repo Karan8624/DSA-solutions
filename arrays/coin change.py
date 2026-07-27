@@ -55,3 +55,9 @@ d[11] = d[11-1] = d[10] + 1= 5+5+1 valid
     d[11] = d[11-2] +2 = d[9] + 2 = 5+2+2+2 = 11
     d[11] = d[11-5] + 5 = d[6] + 5 = 5+1+5 = 11 best
 """
+#The number of coins are to be considered for the answer
+
+"""
+This is a DP problem that follows recurrence relation or state transition formula for the result
+"""
+
