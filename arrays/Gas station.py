@@ -39,13 +39,15 @@ def canCompleteCircuit(gas, cost):
             if mark == i:
                 return mark
         i = i + 1"""
+
+    #this is the greedy approach for the problem the above brute force does work but fails on time 
     total  = 0
     curr = 0
     j = 0
 
     for i in range(len(gas)):
-        total += gas[i] - cost[i]
-        curr += gas[i] - cost[i]
+        total += gas[i] - cost[i] # the total amount keeps getting updated
+        curr += gas[i] - cost[i] # this gets reset if we encounter a lower than 0 current fuel
 
         if curr < 0:
             j = i+1
@@ -55,6 +57,7 @@ def canCompleteCircuit(gas, cost):
         return j
     else:
         return -1
+
 
     
         
