@@ -62,16 +62,17 @@ itereation 2 :- alen = 2 , blen =2 , c =1:-
     ans.append(sum%2= 0 )
     c = sum//2 = 1
 
-itereation 3 :- alen = 1 , blen =1, c =1:-
+iteration 3 :- alen = 1, blen = 1, c = 1:-
     sum = 1
-    alen >0  true :
-        sum += 1 = 1
-        alen -= 1  = 0
-    blen>0 true:
-        sum  += 1 = 1
+    alen >= 0 true:
+        sum += 0 = 1   # a[1] = '0'
+        alen -= 1 = 0
+    blen >= 0 true:
+        sum += 0 = 1   # b[1] = '0'
         blen -= 1 = 0
-    ans.append(sum%2= 1)
-    c = sum//2 = 0
+    ans.append(1%2 = 1)
+    c = 1//2 = 0
+
 
 itereation 4 :- alen =0, blen =0 c =0:-
     sum = 0
