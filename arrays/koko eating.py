@@ -82,4 +82,23 @@ Iteration 2 :- left = 1, right = 5:-
     mid = 3
     hours = [1,2,3,4]
     hour  = 10
+    hour > h :-
+        left  = mid +1 = 4
+
+Iteration 3 :- left = 4 , right = 5:-
+    mid  = 4
+    hours = [1,2,2,3]
+    hour  = 8
+    hour < h:-
+    best  = min(4,6) = 4
+    right  = 4
+
+iteration 4 left =4, right = 4 :
+    mid = (4+4)//2 = 4
+    hours = [1,2,2,3]
+    hour = 8
+    hour <= h:
+        best = min(4,4) = 4
+        right = 3
+
 """
