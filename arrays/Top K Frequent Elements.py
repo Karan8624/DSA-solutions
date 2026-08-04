@@ -11,9 +11,8 @@ def topKFrequent(nums,k):
         else:
             freq[n] = 1
     
-    sorted(freq, key=lambda x: freq[x])
-    freq = list(freq)
-    return freq[0:k]
+
+    return sorted(freq, key=lambda x: freq[x], reverse=True)[:k]
 
 test = [1,1,1,2,2,3]
 print(topKFrequent(test,2))
