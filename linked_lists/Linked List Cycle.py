@@ -12,4 +12,4 @@ def cycle(list):
         else:
             seen.append(curr.val)
         curr = curr.next
-
+        
