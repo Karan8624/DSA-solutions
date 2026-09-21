@@ -1,4 +1,5 @@
 class Solution:
+    
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         if root is None:
             return 0
@@ -18,5 +19,3 @@ class Solution:
         right_diameter = self.diameterOfBinaryTree(root.right)
         
         return max(diameter_here, left_diameter, right_diameter)
-
-    
